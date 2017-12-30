@@ -1,8 +1,13 @@
 import React from 'react';
-import { asset, Pano, Text, View, AmbientLight,Sound } from 'react-vr';
+import { asset, Pano, Text, View, AmbientLight,Sound,VrButton } from 'react-vr';
 import Penholder from './Penholder';
 
 export default class App extends React.Component {
+
+  changeScene(){
+    console.log('click')
+  }
+
   render() {
     return (
       <View>
@@ -15,6 +20,7 @@ export default class App extends React.Component {
             wav:asset('office.wav')
           }}
           />
+        <VrButton onClick={this.changeScene.bind(this)}>  
         <Text
           style={{
             backgroundColor: '#777879',
@@ -28,7 +34,8 @@ export default class App extends React.Component {
           }}>
           VR office
         </Text>
-        <Penholder />
+        </VrButton>
+      {/* <Penholder /> */}
       </View>
     );
   }
