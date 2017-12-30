@@ -1,5 +1,5 @@
 import React from 'react';
-import { asset, Pano, Text, View, AmbientLight } from 'react-vr';
+import { asset, Pano, Text, View, AmbientLight,Sound } from 'react-vr';
 import Penholder from './Penholder';
 
 export default class App extends React.Component {
@@ -8,6 +8,13 @@ export default class App extends React.Component {
       <View>
         <AmbientLight intensity={ 2.5 } />
         <Pano source={asset('background.jpeg')} />
+        <Sound
+          loop={true}
+          volume={0.7}
+          source={{
+            wav:asset('office.wav')
+          }}
+          />
         <Text
           style={{
             backgroundColor: '#777879',
