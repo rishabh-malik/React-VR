@@ -19,7 +19,7 @@ export default class App extends React.Component {
             textAlignVertical: 'center',
             transform: [{translate: [0, 2, -6]}],
           }}>
-          My office
+          VR office
         </Text>
         <Penholder />
       </View>

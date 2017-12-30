@@ -13,7 +13,7 @@ export default class Penholder extends React.Component {
           style={{
             transform: [
               {translate: [-4, 0.70, -4]},
-              { scale: 0.001 },
+              { scale: 0.00125 },
               { rotateX: -90 }
             ]
           }} 
@@ -25,8 +25,8 @@ export default class Penholder extends React.Component {
           }}
           style={{
             transform: [
-              {translate: [4, 0.70, -4]},
-              { scale: 0.001 },
+              {translate: [3.25, 0.70, -4]},
+              { scale: 0.0015 },
               { rotateX: -90 }
             ]
           }} 
@@ -38,8 +38,8 @@ export default class Penholder extends React.Component {
         }}
         style={{
           transform: [
-            {translate: [-4, 0.70, -4]},
-            { scale: 0.001 },
+            {translate: [8.5, 0.70, -4]},
+            { scale: 0.0015 },
             { rotateX: -90 }
           ]
         }} 
